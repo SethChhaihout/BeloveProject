@@ -2,7 +2,10 @@ package com.planbcambodia.beloveproject
 
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
-import android.support.v7.app.AppCompatActivity
+import android.widget.Toast
+import com.planbcambodia.beloveproject.fragment.FragmentChatList
+import com.planbcambodia.beloveproject.fragment.FragmentChatListContainer
+import com.planbcambodia.beloveproject.fragment.FragmentLikesList
 import com.planbcambodia.beloveproject.helper.BottomNavigationViewHelper
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -17,9 +20,12 @@ class MainActivity : BaseActivity() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.tabChat -> {
+                Toast.makeText(baseContext,"Chat",Toast.LENGTH_SHORT).show()
+                replaceFragment(FragmentChatListContainer())
                 return@OnNavigationItemSelectedListener true
             }
             R.id.tabMyPage -> {
+                replaceFragment(FragmentLikesList())
                 return@OnNavigationItemSelectedListener true
             }
         }
