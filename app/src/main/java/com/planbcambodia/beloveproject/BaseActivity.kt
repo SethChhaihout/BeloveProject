@@ -18,12 +18,12 @@ open class BaseActivity : AppCompatActivity(){
         disposable = CompositeDisposable()
 
         //example get data
-        addDisposable(Example.getExamples()
-                .subscribe({response->
-
-                },{error->
-
-                }))
+//        addDisposable(Example.getExamples()
+//                .subscribe({response->
+//
+//                },{error->
+//
+//                }))
     }
 
     protected fun replaceFragment(fragment:Fragment){
