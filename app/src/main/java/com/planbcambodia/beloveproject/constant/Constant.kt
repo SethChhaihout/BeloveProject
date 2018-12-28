@@ -5,6 +5,6 @@ package com.planbcambodia.beloveproject.constant
  */
 class Constant{
     companion object {
-        val BASE_URL = "http://www.test.com/"
+        val BASE_URL = "http://ride-on.planbtesting.club/api/passenger/"
     }
 }

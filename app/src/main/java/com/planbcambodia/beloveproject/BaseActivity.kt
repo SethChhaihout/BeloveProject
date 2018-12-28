@@ -3,13 +3,14 @@ package com.planbcambodia.beloveproject
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import com.planbcambodia.beloveproject.model.Example
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 
 /**
- * Created by chhaihout on 12/27/2018.
- */
+* Created by chhaihout on 12/27/2018.
+*/
 open class BaseActivity : AppCompatActivity(){
     protected var disposable: CompositeDisposable? = null
 
@@ -20,9 +21,13 @@ open class BaseActivity : AppCompatActivity(){
         //example get data
 //        addDisposable(Example.getExamples()
 //                .subscribe({response->
-//
+//                    if(response.success){
+//                        for(example:Example in response.result){
+//                            Log.d("Test",example.photo)
+//                        }
+//                    }
 //                },{error->
-//
+//                    Log.d("Test",error.localizedMessage)
 //                }))
     }
 
