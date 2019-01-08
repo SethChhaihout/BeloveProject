@@ -23,6 +23,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".SearchFilterActivity"></activity>
+        <activity android:name=".HomeActivity">
+
+        </activity>
+        <activity android:name=".activity.StartUpActivity" />
+        <activity android:name=".activity.LogInActivity">
+        </activity>
     </application>
 
 </manifest>

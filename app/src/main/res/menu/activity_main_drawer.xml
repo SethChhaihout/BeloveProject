@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Contact Us" android:id="@+id/navi_contact"/>
+    <item android:title="Notification" android:id="@+id/navi_notification"/>
+    <item android:title="Block User" android:id="@+id/navi_block_user" />
+    <item android:title="FAQ" />
+    <item android:title="Privacy Policy" />
+    <item android:title="Company Profile" />
+    <item android:title="Languages" />
+    <item android:title="Log​ Out" />
+</menu>
