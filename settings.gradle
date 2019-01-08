@@ -1,1 +1,1 @@
-include ':app' ,':libraries:pageindicator'
+include ':app' ,':libraries:pageindicator',':libraries:photo', ':libraries:swipe'

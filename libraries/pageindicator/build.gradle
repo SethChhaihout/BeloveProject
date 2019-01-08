@@ -26,8 +26,13 @@ android {
 }
 
 dependencies {
+  implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+  implementation 'com.android.support:design:27.1.1'
 //  compileOnly rootProject.kotlinStdlib
 //  compileOnly rootProject.recyclerviewV7
 //  testImplementation rootProject.junit
 //  testImplementation rootProject.kotlinStdlib
+}
+repositories {
+    mavenCentral()
 }
