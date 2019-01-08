@@ -2,6 +2,8 @@ package com.planbcambodia.beloveproject.fragment
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import com.planbcambodia.beloveproject.BaseActivity
+import com.planbcambodia.beloveproject.R
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 import kotlinx.android.synthetic.*
@@ -25,5 +27,13 @@ open class BaseFragment: Fragment() {
 
     protected fun addDisposable(d: Disposable){
         disposable?.add(d)
+    }
+
+    fun showSnakebarNoConnection(){
+        showSnakeBar(getString(R.string.connection_lost))
+    }
+
+    fun showSnakeBar(text:String){
+        (activity as BaseActivity).showSnakeBar(text)
     }
 }

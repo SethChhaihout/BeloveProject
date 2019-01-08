@@ -3,10 +3,12 @@ package com.planbcambodia.beloveproject
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import android.support.v7.app.AppCompatActivity
+import android.view.View
 import com.planbcambodia.beloveproject.helper.BottomNavigationViewHelper
+import com.planbcambodia.beloveproject.util.Dialog
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : BaseActivity() {
+class MainActivity : NetworkActivity() {
 
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
         when (item.itemId) {

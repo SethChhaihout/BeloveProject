@@ -6,4 +6,9 @@
     <string name="matching">Matching</string>
     <string name="chat">Chat</string>
     <string name="my_page">My Page</string>
+    <string name="connection_lost">Connection Lost \n You\'re using BeLoves in offline mode</string>
+    <string name="cancel">Cancel</string>
+    <string name="call">Call</string>
+    <string name="sample">Sample</string>
+    <string name="age">Age</string>
 </resources>
