@@ -18,7 +18,7 @@
 
     <item
         android:id="@+id/tabMyPage"
-        android:icon="@drawable/ic_mypage"
+        android:icon="@drawable/ic_account"
         android:title="@string/my_page" />
 
 </menu>

@@ -1,0 +1,16 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.planbcambodia.beloveproject.fragment.MatchingFragment">
+    <link.fls.swipestack.util.MySwipeStack
+        android:id="@+id/swipeStack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        app:stack_rotation="0"
+        app:stack_size="2"
+        app:stack_spacing="0dp"
+        />
+</FrameLayout>

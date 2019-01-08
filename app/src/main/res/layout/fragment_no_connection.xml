@@ -1,0 +1,44 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.planbcambodia.beloveproject.fragment.NoConnectionFragment">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/ic_cloud_no_connection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cloud_no_connection"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:id="@+id/no_connection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No internet connection"
+                android:layout_below="@id/ic_cloud_no_connection"
+                android:layout_centerHorizontal="true"
+                android:textSize="18sp"
+                android:textColor="#4B4B4B"/>
+            <ImageView
+                android:id="@+id/ic_reload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_reload"
+                android:layout_below="@id/no_connection"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/txtReload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tap to Reload"
+                android:layout_below="@id/no_connection"
+                android:layout_toRightOf="@id/ic_reload"
+                android:layout_marginTop="10dp"
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp"/>
+        </RelativeLayout>
+</FrameLayout>
