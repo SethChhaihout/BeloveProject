@@ -3,6 +3,10 @@ package com.planbcambodia.beloveproject.activity
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
 import com.planbcambodia.beloveproject.R
+import android.widget.Toast
+import com.planbcambodia.beloveproject.fragment.FragmentChatList
+import com.planbcambodia.beloveproject.fragment.FragmentChatListContainer
+import com.planbcambodia.beloveproject.fragment.FragmentLikesList
 import com.planbcambodia.beloveproject.fragment.HomeFragment
 import com.planbcambodia.beloveproject.fragment.MatchingFragment
 import com.planbcambodia.beloveproject.fragment.NoConnectionFragment
@@ -22,10 +26,12 @@ class MainActivity : NetworkActivity() {
                 return@OnNavigationItemSelectedListener true
             }
             R.id.tabChat -> {
-                replaceFragment(NoConnectionFragment())
+                Toast.makeText(baseContext,"Chat",Toast.LENGTH_SHORT).show()
+                replaceFragment(FragmentChatListContainer())
                 return@OnNavigationItemSelectedListener true
             }
             R.id.tabMyPage -> {
+                replaceFragment(FragmentLikesList())
                 return@OnNavigationItemSelectedListener true
             }
         }

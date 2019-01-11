@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/timestamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Monday, 11:30pm"
+            android:textColor="@color/colorLightBlack" />
+
+    </LinearLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_profile"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignBottom="@+id/image"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="8dp"
+            android:src="@mipmap/ic_user" />
+
+
+        <com.joooonho.SelectableRoundedImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/image"
+            android:layout_toRightOf="@+id/img_profile"
+            android:src="@drawable/img_receiver_sample"
+            android:scaleType="centerCrop"
+            android:layout_width="194dp"
+            android:layout_height="194dp"
+            app:sriv_oval="false"
+            app:sriv_left_top_corner_radius="16dip"
+            app:sriv_right_top_corner_radius="16dip"
+            app:sriv_left_bottom_corner_radius="0dip"
+            app:sriv_right_bottom_corner_radius="16dip"/>
+    </RelativeLayout>
+</LinearLayout>
