@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.planbcambodia.beloveproject.R
 import com.planbcambodia.beloveproject.model.LikeList
-import kotlinx.android.synthetic.main.viewholder_likes_list.view.*
+import kotlinx.android.synthetic.main.viewholder_chat_list.view.*
 
 class LikeListAdapter (val chatList : ArrayList<LikeList>, val context: Context,private var listener: OnLikeClickListener) : RecyclerView.Adapter<LikeListAdapter.ViewHolder>(){
 
@@ -20,15 +20,21 @@ class LikeListAdapter (val chatList : ArrayList<LikeList>, val context: Context,
         val chat = chatList.get(position)
         Log.d("getName", "" + chat.getUserName())
         holder.tvName.setText(chat.getUserName())
-        holder.tvAge.setText(chat.getUserAge())
-        holder.tvLocation.setText(chat.getUserLocation())
+        if(chat.getIsActive()==true){
+            holder.imvActive.visibility=View.VISIBLE
+        }else{
+            holder.imvActive.visibility=View.GONE
+        }
+        holder.imvStar.visibility=View.GONE
+
+        holder.tvTime.setText(chat.getUserTime())
         holder.Bind(chatList.get(position), this.listener!!)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, position: Int): LikeListAdapter.ViewHolder {
         return LikeListAdapter.ViewHolder(
             LayoutInflater.from(context).inflate(
-                R.layout.viewholder_likes_list,
+                R.layout.viewholder_chat_list,
                 parent,
                 false
             )
@@ -41,15 +47,18 @@ class LikeListAdapter (val chatList : ArrayList<LikeList>, val context: Context,
 
     class ViewHolder (view: View) : RecyclerView.ViewHolder(view) {
         // Holds the TextView that will add each animal to
-        val tvName = view.tvLikesName
-        val tvAge=view.tvAge
-        val tvLocation=view.tvLocation
+        val tvName = view.tvName
+        val imvProfile       =view.imgProfile
+        val tvTime=view.tvLastMessage
+        val imvActive=view.imv_chat_active
+        val imvStar=view.imv_star
 
         fun Bind(chat: LikeList, listener: LikeListAdapter.OnLikeClickListener) {
 
             tvName.text     = chat.getUserName()
-            tvAge.text      = chat.getUserAge()
-            tvLocation.text = chat.getUserLocation()
+            tvTime.text = chat.getUserTime()
+            imvProfile.setImageResource(chat.getUserPhoto())
+
             itemView.setOnClickListener({
                 listener.OnLikeListClick(chat)
             })

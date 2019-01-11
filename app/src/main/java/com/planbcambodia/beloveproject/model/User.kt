@@ -1,11 +1,10 @@
 package com.planbcambodia.beloveproject.model
 
-class User (){
-    var userId : Int = 0
-    var userName : String = ""
-    var userPhoto: String = ""
+class User (var userId : String,var userName: String,var userPhoto:String){
+    fun User(){
 
-    fun getId() : Int{
+    }
+    fun getId() : String{
         return userId
     }
     fun getName() : String{

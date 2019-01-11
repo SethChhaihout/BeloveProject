@@ -16,12 +16,17 @@
             android:gravity="center_vertical"
             android:background="@drawable/border_bottom"
             android:layout_height="55dp">
-            <ImageView
-                android:id="@+id/imv_setting_show"
+            <LinearLayout
+                android:id="@+id/lyt_show"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="50dp"
-                android:layout_width="14dp"
-                android:layout_height="16dp"
-                android:src="@drawable/img_context_setting"/>
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/img_context_setting"/>
+            </LinearLayout>
         </LinearLayout>
         <android.support.v7.widget.CardView
             android:id="@+id/layout_setting_hide"
@@ -31,7 +36,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <LinearLayout
-                android:paddingBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
@@ -41,14 +45,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="55dp">
                     <LinearLayout
+                        android:id="@+id/lyt_close"
+                        android:layout_marginLeft="50dp"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:gravity="center_vertical">
                         <ImageView
-                            android:id="@+id/imv_close"
-                            android:layout_marginLeft="50dp"
-                            android:layout_width="15dp"
-                            android:layout_height="15dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
                             android:src="@drawable/img_close_context"/>
                     </LinearLayout>
                     <LinearLayout
@@ -70,6 +74,7 @@
                         android:layout_height="match_parent"
                         android:gravity="center_vertical">
                         <TextView
+                            android:id="@+id/tv_done"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="18dp"
@@ -80,31 +85,79 @@
                 </LinearLayout>
                 <LinearLayout android:layout_width="match_parent" android:orientation="vertical" android:layout_height="wrap_content">
                         <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorLightGray"></View>
-
-                        <TextView
-                            android:id="@+id/radioFavorites"
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:id="@+id/radioFavorites"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="42dp"
+                                android:padding="10dp"
+                                android:text="All Connection"/>
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/img_choose"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:visibility="gone"/>
+                        </RelativeLayout>
+                        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorLightGray"></View>
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical">
+                            <ImageView
+                                android:id="@+id/img_online"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/img_online"
+                                android:layout_marginLeft="50dp"/>
+                            <TextView
+                                android:layout_toRightOf="@+id/img_online"
+                                android:id="@+id/radioOnline"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="Online"/>
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/img_choose"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"/>
+                        </RelativeLayout>
+                        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorLightGray"></View>
+                        <RelativeLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:padding="10dp"
-                            android:layout_marginLeft="42dp"
-                            android:text="All Connection"/>
-                        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorLightGray"></View>
-                        <TextView
-                            android:id="@+id/radioOnline"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="10dp"
-                            android:layout_marginLeft="42dp"
-                            android:text="Online"/>
-                        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorLightGray"></View>
-                        <TextView
-                            android:id="@+id/radioAll"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:padding="10dp"
-                            android:layout_marginLeft="42dp"
-                            android:text="Favorites"/>
-                        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/colorLightGray"></View>
+                            android:layout_marginLeft="50dp">
+                            <ImageView
+                                android:id="@+id/img_favorites"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/img_favorites"
+                                android:layout_centerVertical="true"/>
+                            <TextView
+                                android:id="@+id/radioAll"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="10dp"
+                                android:text="Favorites"
+                                android:layout_toRightOf="@+id/img_favorites"/>
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/img_choose"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:visibility="gone"/>
+                        </RelativeLayout>
                 </LinearLayout>
             </LinearLayout>
         </android.support.v7.widget.CardView>

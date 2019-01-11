@@ -3,15 +3,13 @@ package com.planbcambodia.beloveproject
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
-import com.planbcambodia.beloveproject.model.Example
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 
 /**
-* Created by chhaihout on 12/27/2018.
-*/
-open class BaseActivity : AppCompatActivity(){
+ * Created by chhaihout on 12/27/2018.
+ */
+open class BaseActivity : AppCompatActivity() {
     protected var disposable: CompositeDisposable? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,9 +29,9 @@ open class BaseActivity : AppCompatActivity(){
 //                }))
     }
 
-    protected fun replaceFragment(fragment:Fragment){
+    protected fun replaceFragment(fragment: Fragment) {
         supportFragmentManager.beginTransaction()
-                .replace(R.id.frame,fragment)
+                .replace(R.id.frame, fragment)
                 .commit()
     }
 
@@ -42,7 +40,7 @@ open class BaseActivity : AppCompatActivity(){
         disposable?.clear()
     }
 
-    protected fun addDisposable(d:Disposable){
+    protected fun addDisposable(d: Disposable) {
         disposable?.add(d)
     }
 }

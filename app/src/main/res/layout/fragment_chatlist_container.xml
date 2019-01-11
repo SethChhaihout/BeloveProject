@@ -15,8 +15,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:tabTextAppearance="@android:style/TextAppearance"
+        app:tabIndicatorHeight="4dp"
+        android:background="@drawable/border_bottom_small"
         app:tabMode="fixed"/>
-
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager_main"
         android:layout_width="match_parent"

@@ -1,6 +1,6 @@
 package com.planbcambodia.beloveproject.model
 
-class Chat (var timeStamp: Boolean?, var sendDate: String, var userId: String,var partnerId : Int, var chatType: ChatType){
+class Chat (var timeStamp: Boolean?, var sendDate: String, var userId: String, var partnerID : String, var chatType: ChatType){
 
     fun isShowTimeStamp(): Boolean? {
         return timeStamp
@@ -24,6 +24,14 @@ class Chat (var timeStamp: Boolean?, var sendDate: String, var userId: String,va
 
     fun setUser_id(user_id: String) {
         this.userId = user_id
+    }
+
+    fun setPartner_id(partnerId: String){
+        this.partnerID=partnerId
+    }
+
+    fun getPartnerId() : String{
+        return partnerID
     }
 
     fun getType(): ChatType? {

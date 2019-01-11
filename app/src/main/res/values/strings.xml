@@ -6,4 +6,6 @@
     <string name="matching">Matching</string>
     <string name="chat">Chat</string>
     <string name="my_page">My Page</string>
+    <string name="company_desc">.We only collect information that you provide us directly such as your username, password and email address at the registration of account.</string>
+
 </resources>

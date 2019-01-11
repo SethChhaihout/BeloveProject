@@ -1,12 +1,12 @@
 package com.planbcambodia.beloveproject.model
 
-class ChatList(var name: String, var photo: String, var last_message: String, var time: String) {
+class ChatList(var name: String, var photo: Int, var last_message: String,var isLike : Boolean,var isActive : Boolean) {
 
     fun getUserName(): String {
         return name
     }
 
-    fun getUserPhoto(): String {
+    fun getUserPhoto(): Int {
         return photo
     }
 
@@ -14,7 +14,10 @@ class ChatList(var name: String, var photo: String, var last_message: String, va
         return last_message;
     }
 
-    fun getUserTime(): String {
-        return time
+    fun getIsLike() : Boolean{
+        return isLike
+    }
+    fun getIsActive() : Boolean{
+        return isActive
     }
 }

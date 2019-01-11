@@ -1,13 +1,11 @@
 package com.planbcambodia.beloveproject.fragment
 
-import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import com.planbcambodia.beloveproject.R
 import com.planbcambodia.beloveproject.adapter.LikeListAdapter
 import com.planbcambodia.beloveproject.model.LikeList
@@ -38,16 +36,31 @@ class FragmentLikedList : Fragment() {
 
     private fun setLikesList(){
         likesList.clear()
-        likesList.add(LikeList("Abc", "18","Phnom Penh",""))
-        likesList.add(LikeList("Abc", "18","Phnom Penh",""))
-        likesList.add(LikeList("Abc", "18","Phnom Penh",""))
-        likesList.add(LikeList("Abc", "18","Phnom Penh",""))
-        likesList.add(LikeList("Abc", "18","Phnom Penh",""))
-        likesList.add(LikeList("Abc", "18","Phnom Penh",""))
-        likesList.add(LikeList("Abc", "18","Phnom Penh",""))
-        likesList.add(LikeList("Abc", "18","Phnom Penh",""))
-        likesList.add(LikeList("Abc", "18","Phnom Penh",""))
-        likesList.add(LikeList("Abc", "18","Phnom Penh",""))
-        likesList.add(LikeList("Abc", "18","Phnom Penh",""))
+        likesList.add(LikeList("Abc", true,"Liked you today",R.mipmap.ic_user))
+        likesList.add(LikeList("ABB", false,"Liked you 1 day",R.mipmap.ic_user))
+        likesList.add(LikeList("Abc", true,"Liked you today",R.mipmap.ic_user))
+        likesList.add(LikeList("ABB", false,"Liked you 1 day",R.mipmap.ic_user))
+        likesList.add(LikeList("Abc", true,"Liked you today",R.mipmap.ic_user))
+        likesList.add(LikeList("ABB", false,"Liked you 1 day",R.mipmap.ic_user))
+        likesList.add(LikeList("Abc", true,"Liked you today",R.mipmap.ic_user))
+        likesList.add(LikeList("ABB", false,"Liked you 1 day",R.mipmap.ic_user))
+        likesList.add(LikeList("Abc", true,"Liked you today",R.mipmap.ic_user))
+        likesList.add(LikeList("ABB", false,"Liked you 1 day",R.mipmap.ic_user))
+        likesList.add(LikeList("Abc", true,"Liked you today",R.mipmap.ic_user))
+        likesList.add(LikeList("ABB", false,"Liked you 1 day",R.mipmap.ic_user))
+        likesList.add(LikeList("Abc", true,"Liked you today",R.mipmap.ic_user))
+        likesList.add(LikeList("ABB", false,"Liked you 1 day",R.mipmap.ic_user))
+        likesList.add(LikeList("Abc", true,"Liked you today",R.mipmap.ic_user))
+        likesList.add(LikeList("ABB", false,"Liked you 1 day",R.mipmap.ic_user))
+        likesList.add(LikeList("Abc", true,"Liked you today",R.mipmap.ic_user))
+        likesList.add(LikeList("ABB", false,"Liked you 1 day",R.mipmap.ic_user))
+        likesList.add(LikeList("Abc", true,"Liked you today",R.mipmap.ic_user))
+        likesList.add(LikeList("ABB", false,"Liked you 1 day",R.mipmap.ic_user))
+        likesList.add(LikeList("Abc", true,"Liked you today",R.mipmap.ic_user))
+        likesList.add(LikeList("ABB", false,"Liked you 1 day",R.mipmap.ic_user))
+        likesList.add(LikeList("Abc", true,"Liked you today",R.mipmap.ic_user))
+        likesList.add(LikeList("ABB", false,"Liked you 1 day",R.mipmap.ic_user))
+
+
     }
 }
