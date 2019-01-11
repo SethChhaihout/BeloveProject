@@ -5,6 +5,7 @@ import android.content.Context
 import android.graphics.Canvas
 import android.graphics.Paint
 import android.os.Parcelable
+import android.support.v4.content.ContextCompat
 import android.support.v4.view.PagerAdapter
 import android.support.v4.view.ViewPager
 import android.support.v4.view.ViewPager.OnPageChangeListener
@@ -81,10 +82,10 @@ class PageIndicator @JvmOverloads constructor(
     animDuration = ta.getInteger(
         R.styleable.PageIndicator_piAnimDuration, DEFAULT_ANIM_DURATION).toLong()
     defaultPaint.color = ta.getColor(
-        R.styleable.PageIndicator_piDefaultColor, resources.getColor(android.R.color.black))
+        R.styleable.PageIndicator_piDefaultColor, ContextCompat.getColor(context,android.R.color.black))
     defaultPaint.style = Paint.Style.STROKE
     selectedPaint.color = ta.getColor(
-        R.styleable.PageIndicator_piSelectedColor, resources.getColor(R.color.pi_selected_color))
+        R.styleable.PageIndicator_piSelectedColor, ContextCompat.getColor(context,R.color.pi_selected_color))
     animInterpolator = AnimationUtils.loadInterpolator(context, ta.getResourceId(
         R.styleable.PageIndicator_piAnimInterpolator,
         R.anim.pi_default_interpolator))
@@ -153,10 +154,10 @@ class PageIndicator @JvmOverloads constructor(
   }
 
   fun attachTo(recyclerView: RecyclerView) {
-    recyclerView.removeOnScrollListener(scrollListener)
-    count = recyclerView.adapter.itemCount
+    recyclerView.removeOnScrollListener(scrollListener!!)
+    count = recyclerView.adapter!!.itemCount
     scrollListener = ScrollListener(this)
-    recyclerView.addOnScrollListener(scrollListener)
+    recyclerView.addOnScrollListener(scrollListener!!)
     scrollToTarget(0)
   }
 

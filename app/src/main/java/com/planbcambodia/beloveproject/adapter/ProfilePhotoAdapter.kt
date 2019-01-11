@@ -32,7 +32,7 @@ class ProfilePhotoAdapter(val profilePhotos:List<ProfilePhoto>,val onPhotoClickL
     class ProfilePhotoViewHoder(view: View) : RecyclerView.ViewHolder(view){
         fun bindView(context:Context,profilePhoto: ProfilePhoto,onPhotoClickListener: OnPhotoClickListener){
             if(profilePhoto.url.isNotEmpty()){
-                Picasso.with(context)
+                Picasso.get()
                         .load(R.drawable.dummy_photo)
                         .fit()
                         .centerCrop()

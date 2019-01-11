@@ -52,7 +52,6 @@ open class PhotoActivity : NetworkActivity() {
         override fun load(imageView: ImageView, url: String) {
             Glide.with(imageView.getContext())
                     .load(url)
-                    .crossFade()
                     .into(imageView);
         }
     }
