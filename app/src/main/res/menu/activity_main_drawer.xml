@@ -1,13 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item android:title="Contact Us" android:id="@+id/navi_contact"/>
-    <item android:title="Notification" android:id="@+id/navi_notification"/>
-    <item android:title="Block User" android:id="@+id/navi_block_user" />
-    <item android:title="FAQ" />
-    <item android:title="Privacy Policy" />
-    <item android:title="Company Profile" />
-    <item android:title="Languages" />
-    <item android:title="Log​ Out" />
+    <item
+        android:id="@+id/navi_contact"
+        android:icon="@drawable/ic_contact"
+        android:title="Contact Us" />
+    <item
+        android:id="@+id/navi_notification"
+        android:icon="@drawable/ic_notification"
+        android:title="Notification" />
+    <item
+        android:id="@+id/navi_block_user"
+        android:icon="@drawable/ic_block_user"
+        android:title="Block User" />
+    <item
+        android:id="@+id/navi_FAQ"
+        android:icon="@drawable/ic_faq"
+        android:title="FAQ" />
+    <item
+        android:id="@+id/navi_privacy"
+        android:icon="@drawable/ic_pravicy"
+        android:title="Privacy Policy" />
+    <item
+        android:id="@+id/navi_company_profile"
+        android:icon="@drawable/ic_company_profile"
+        android:title="Company Profile" />
+    <item
+        android:id="@+id/navi_language"
+        android:icon="@drawable/ic_language"
+        android:title="Languages" />
+    <item
+        android:id="@+id/navi_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Log​ Out" />
+
 </menu>

@@ -10,13 +10,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_filter"/>
-        <TextView
-            android:id="@+id/txtTitle"
+        <ImageView
             android:layout_gravity ="center"
-            android:text="BeLoves"
-            android:textSize="22sp"
-            android:textColor="#f55555"
-            android:layout_centerHorizontal="true"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_belove_toolbar"
+            />
 </android.support.v7.widget.Toolbar>
