@@ -3,12 +3,18 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="disableWrapperSourceDistributionNotification" value="true" />
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/libraries" />
+            <option value="$PROJECT_DIR$/libraries/album" />
+            <option value="$PROJECT_DIR$/libraries/pageindicator" />
+            <option value="$PROJECT_DIR$/libraries/photo" />
+            <option value="$PROJECT_DIR$/libraries/swipe" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <com.chahinem.pageindicator.PageIndicator
+            android:id="@+id/pageIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            app:piSize1="12dp"
+            app:piSize2="12dp"
+            app:piSize3="12dp"
+            app:piSize4="12dp"
+            app:piSize5="12dp"
+            app:piSize6="12dp"
+            app:piDotSpacing="4dp"
+            android:rotation="90"
+            app:piDotBound="92dp"
+            app:piSelectedColor="@android:color/white"
+            android:layout_alignParentEnd="true"
+            android:translationX="60dp"
+            />
+    </RelativeLayout>
+</merge>
