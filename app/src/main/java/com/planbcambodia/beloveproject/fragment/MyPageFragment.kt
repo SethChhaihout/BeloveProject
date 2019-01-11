@@ -13,7 +13,7 @@ import com.planbcambodia.beloveproject.R
 /**
  * A simple [Fragment] subclass.
  */
-class MyPageFragment : Fragment() {
+class MyPageFragment : BaseFragment() {
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,

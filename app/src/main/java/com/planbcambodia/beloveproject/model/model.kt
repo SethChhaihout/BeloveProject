@@ -16,3 +16,9 @@ data class Example(var id:Int,var service_name:String?,var photo:String?){
         }
     }
 }
+
+data class ProfileItem(var name:String,var value:String)
+
+data class ProfilePhoto(var url:String)
+
+data class Hobbie(var name:String,var isPersonal:Boolean = false,var isSelected:Boolean = false)

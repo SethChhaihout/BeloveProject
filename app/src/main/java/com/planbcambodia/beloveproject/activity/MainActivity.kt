@@ -1,7 +1,8 @@
-package com.planbcambodia.beloveproject
+package com.planbcambodia.beloveproject.activity
 
 import android.os.Bundle
 import android.support.design.widget.BottomNavigationView
+import com.planbcambodia.beloveproject.R
 import com.planbcambodia.beloveproject.fragment.HomeFragment
 import com.planbcambodia.beloveproject.fragment.MatchingFragment
 import com.planbcambodia.beloveproject.fragment.NoConnectionFragment

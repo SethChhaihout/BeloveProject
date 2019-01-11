@@ -1,4 +1,4 @@
-package com.planbcambodia.beloveproject
+package com.planbcambodia.beloveproject.activity
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -7,8 +7,7 @@ import com.daimajia.slider.library.SliderTypes.BaseSliderView
 import kotlinx.android.synthetic.main.activity_home.*
 import com.daimajia.slider.library.Animations.DescriptionAnimation
 import com.daimajia.slider.library.SliderLayout
-
-
+import com.planbcambodia.beloveproject.R
 
 
 class HomeActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.planbcambodia.beloveproject
+package com.planbcambodia.beloveproject.activity
 
 import android.os.Bundle
 import android.support.design.widget.Snackbar
@@ -9,9 +9,10 @@ import io.reactivex.disposables.Disposable
 import android.view.Gravity
 import android.os.Build
 import android.support.v4.content.ContextCompat
+import android.support.v7.app.AlertDialog
 import android.view.View
 import android.widget.TextView
-
+import com.planbcambodia.beloveproject.R
 
 
 /**
@@ -21,6 +22,8 @@ open class BaseActivity : AppCompatActivity(){
     protected var disposable: CompositeDisposable? = null
     private var snakeBar:Snackbar? = null
     var screenDpi:Float = 0f
+
+    protected var alertDialog:AlertDialog? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

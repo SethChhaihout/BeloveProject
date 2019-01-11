@@ -2,7 +2,7 @@ package com.planbcambodia.beloveproject.fragment
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
-import com.planbcambodia.beloveproject.BaseActivity
+import com.planbcambodia.beloveproject.activity.BaseActivity
 import com.planbcambodia.beloveproject.R
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable

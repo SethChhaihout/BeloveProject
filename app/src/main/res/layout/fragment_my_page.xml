@@ -4,10 +4,76 @@
     android:layout_height="match_parent"
     tools:context="com.planbcambodia.beloveproject.fragment.MyPageFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="54dp"
+            android:paddingBottom="54dp"
+            android:orientation="vertical"
+            android:background="@drawable/border_bottom">
+
+            <RelativeLayout
+                android:layout_width="136dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="8dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/dummy_photo" />
+
+                <ImageView
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:src="@drawable/ic_edit_photo"
+                    android:background="@drawable/bg_circl_primary"
+                    android:padding="8dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="16dp"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sample_name_age"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:textStyle="bold"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal"
+            android:background="@drawable/border_bottom">
+
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="54dp"
+                android:src="@drawable/ic_edit_profile"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp"
+                android:layout_marginLeft="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/edit_profile"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
 
 </FrameLayout>

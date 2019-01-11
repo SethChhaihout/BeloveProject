@@ -1,42 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:orientation="horizontal">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/lightGray"
+    android:layout_marginRight="16dp">
 
     <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/border_bottom"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp">
-
-        <TextView
-            android:id="@+id/itemName"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sample"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"/>
+        android:layout_width="86dp"
+        android:layout_height="132dp"
+        android:background="@drawable/border_bottom">
 
         <ImageView
-            android:id="@+id/arrowRight"
-            android:layout_width="16dp"
-            android:layout_height="16dp"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:src="@drawable/ic_right_arrow" />
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_camera"
+            android:layout_centerInParent="true"/>
 
-        <TextView
-            android:id="@+id/itemValue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/sample"
-            android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:layout_toLeftOf="@id/arrowRight"
-            android:layout_marginRight="8dp"/>
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/dummy_photo" />
 
     </RelativeLayout>
 
-</RelativeLayout>
+</android.support.v7.widget.CardView>

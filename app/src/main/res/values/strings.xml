@@ -14,4 +14,14 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sample_name_age">Rasy, 27</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="remove">Remove</string>
+    <string name="want_to_remove">Do you want to remove this photo ?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="hobbies">Hobbies</string>
+    <string name="save">Save</string>
+    <string name="other">Other</string>
 </resources>
