@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_below="@id/for_your_safety"
+        android:id="@+id/first_drop_down"
+        android:background="@drawable/bg_drop_down_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/ic_drop"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_drop_down"/>
+        <TextView
+            android:id="@+id/txtQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ic_drop"
+            android:text="@string/txtQuestion"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+        <com.planbcambodia.beloveproject.custom_layout.ExpandCollapseView
+            android:id="@+id/ExpandAns"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/txtQ">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000"/>
+            <TextView
+                android:id="@+id/txtAns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A. At BeLoves we take online security very seriously.At BeLoves we take online security very seriously."
+                android:textSize="17sp"
+                android:padding="15dp"
+                android:textColor="#000"/>
+        </com.planbcambodia.beloveproject.custom_layout.ExpandCollapseView>
+    </RelativeLayout>
+</RelativeLayout>
