@@ -32,7 +32,9 @@ import android.widget.FrameLayout;
 
 import java.util.Random;
 
-public class SwipeStack extends ViewGroup {
+import link.fls.swipestack.util.SwipeListener;
+
+public class SwipeStack extends ViewGroup implements SwipeListener{
 
     public static final int SWIPE_DIRECTION_BOTH = 0;
     public static final int SWIPE_DIRECTION_ONLY_LEFT = 1;
@@ -71,6 +73,15 @@ public class SwipeStack extends ViewGroup {
     private SwipeProgressListener mProgressListener;
 
     private Context context;
+
+    public interface OnSwipeProgress{
+        public void onSwipe(float swipeProgress);
+    }
+    OnSwipeProgress onSwipeProgress;
+
+    public void setOnSwipeProgressListener(OnSwipeProgress onSwipeProgress){
+        this.onSwipeProgress = onSwipeProgress;
+    }
 
     public SwipeStack(Context context) {
         this(context, null);
@@ -124,7 +135,7 @@ public class SwipeStack extends ViewGroup {
         setClipToPadding(false);
         setClipChildren(false);
 
-        mSwipeHelper = new SwipeHelper(this);
+        mSwipeHelper = new SwipeHelper(this,this);
         mSwipeHelper.setAnimationDuration(mAnimationDuration);
         mSwipeHelper.setRotation(mSwipeRotation);
         mSwipeHelper.setOpacityEnd(mSwipeOpacity);
@@ -421,6 +432,13 @@ public class SwipeStack extends ViewGroup {
         mCurrentViewIndex = 0;
         removeAllViewsInLayout();
         requestLayout();
+    }
+
+    @Override
+    public void onSwipe(float progress) {
+        if(onSwipeProgress!=null){
+            onSwipeProgress.onSwipe(progress);
+        }
     }
 
     /**

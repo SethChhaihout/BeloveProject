@@ -12,7 +12,7 @@
         android:title="Notification" />
     <item
         android:id="@+id/navi_block_user"
-        android:icon="@drawable/ic_block_user"
+        android:icon="@drawable/ic_block"
         android:title="Block User" />
     <item
         android:id="@+id/navi_FAQ"

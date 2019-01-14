@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
     <android.support.v7.widget.CardView
+        android:layout_marginTop="54dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:cardCornerRadius="10dp">
@@ -27,27 +27,16 @@
                 android:id="@+id/txtName_in_card"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Rassy ,"
+                android:text="Rassy ,27"
                 android:textSize="22sp"
                 android:textColor="#000"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"/>
-            <TextView
-                android:id="@+id/txtAge_in_card"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="27"
-                android:textSize="22dp"
-                android:layout_toRightOf="@id/txtName_in_card"
-                android:layout_marginTop="12dp"
-                android:layout_marginLeft="-5dp"
-                android:textColor="#000"
-                />
             <ImageView
                 android:id="@+id/ic_location_in_card"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
                 android:src="@drawable/ic_location"
                 android:layout_below="@id/txtName_in_card"
                 android:layout_marginLeft="10dp"
@@ -60,8 +49,8 @@
                 android:layout_toRightOf="@id/ic_location_in_card"
                 android:layout_marginLeft="5dp"/>
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
                 android:src="@drawable/ic_arrow_down"
                 android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"

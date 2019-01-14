@@ -26,4 +26,9 @@
     <string name="hobbies">Hobbies</string>
     <string name="save">Save</string>
     <string name="other">Other</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="title_text">Q. How can I manage about my online safety?</string>
+    <string name="content_text">A. At BeLoves we take online security very seriously.At BeLoves we take online security very seriously.</string>
+    <string name="txtQuestion">​ ​​ Q. How can I manage about my online safety?</string>
 </resources>

@@ -37,12 +37,11 @@
         <activity android:name=".activity.SearchFilterActivity" />
         <activity android:name=".activity.HomeActivity" />
         <activity android:name=".activity.StartUpActivity" />
+
         <activity android:name=".activity.LogInActivity" />
-        <activity android:name=".activity.EditProfileActivity"/>
-        <activity android:name=".activity.PhotoActivity" />
-        <activity android:name=".activity.PhotoSlideActivity" />
-        <activity android:name=".activity.HobbieActivity"/>
-        <activity android:name=".activity.AddHobbyActivity"/>
+        <activity android:name=".activity.MatchingDetailActivity"></activity>
+        <activity android:name=".activity.FAQActivity" android:theme="@style/HaveToolBar">
+        </activity>
     </application>
 
 </manifest>

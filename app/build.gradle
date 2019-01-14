@@ -73,9 +73,10 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:3.8.0'
     //RecyclerView Animation
     implementation 'com.mlsdev.animatedrv:library:1.0.1'
-    //preview image
-    implementation 'com.github.chrisbanes:PhotoView:2.0.0'
-
+    //SpinKit
+    implementation 'com.github.ybq:Android-SpinKit:1.2.0'
+    //DropdownTextView
+    implementation 'com.github.hakobast:dropdown-textview:0.1.1'
     implementation project(':libraries:pageindicator')
     implementation project(':libraries:swipe')
     implementation project(':libraries:photo')

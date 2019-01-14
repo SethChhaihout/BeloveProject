@@ -23,6 +23,7 @@
             app:piDotSpacing="4dp"
             android:rotation="90"
             app:piDotBound="92dp"
+            app:piDefaultColor="#fff"
             app:piSelectedColor="@android:color/white"
             android:layout_alignParentEnd="true"
             android:translationX="60dp"
