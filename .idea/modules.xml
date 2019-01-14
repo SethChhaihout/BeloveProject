@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BeloveProject.iml" filepath="$PROJECT_DIR$/BeloveProject.iml" />
+      <module fileurl="file://D:\belove-dad579bc04216a9aaf335168447c3950dccd547c\belove-dad579bc04216a9aaf335168447c3950dccd547c\BeloveProject.iml" filepath="D:\belove-dad579bc04216a9aaf335168447c3950dccd547c\belove-dad579bc04216a9aaf335168447c3950dccd547c\BeloveProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://D:\belove-dad579bc04216a9aaf335168447c3950dccd547c\belove-dad579bc04216a9aaf335168447c3950dccd547c\app\app.iml" filepath="D:\belove-dad579bc04216a9aaf335168447c3950dccd547c\belove-dad579bc04216a9aaf335168447c3950dccd547c\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/belove-dad579bc04216a9aaf335168447c3950dccd547c.iml" filepath="$PROJECT_DIR$/belove-dad579bc04216a9aaf335168447c3950dccd547c.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/libraries.iml" filepath="$PROJECT_DIR$/libraries/libraries.iml" />
+      <module fileurl="file://D:\belove-dad579bc04216a9aaf335168447c3950dccd547c\belove-dad579bc04216a9aaf335168447c3950dccd547c\libraries\libraries.iml" filepath="D:\belove-dad579bc04216a9aaf335168447c3950dccd547c\belove-dad579bc04216a9aaf335168447c3950dccd547c\libraries\libraries.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/pageindicator/pageindicator.iml" filepath="$PROJECT_DIR$/libraries/pageindicator/pageindicator.iml" />
+      <module fileurl="file://D:\belove-dad579bc04216a9aaf335168447c3950dccd547c\belove-dad579bc04216a9aaf335168447c3950dccd547c\libraries\pageindicator\pageindicator.iml" filepath="D:\belove-dad579bc04216a9aaf335168447c3950dccd547c\belove-dad579bc04216a9aaf335168447c3950dccd547c\libraries\pageindicator\pageindicator.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/photo/photo.iml" filepath="$PROJECT_DIR$/libraries/photo/photo.iml" />
+      <module fileurl="file://D:\belove-dad579bc04216a9aaf335168447c3950dccd547c\belove-dad579bc04216a9aaf335168447c3950dccd547c\libraries\photo\photo.iml" filepath="D:\belove-dad579bc04216a9aaf335168447c3950dccd547c\belove-dad579bc04216a9aaf335168447c3950dccd547c\libraries\photo\photo.iml" />
       <module fileurl="file://$PROJECT_DIR$/libraries/swipe/swipe.iml" filepath="$PROJECT_DIR$/libraries/swipe/swipe.iml" />
+      <module fileurl="file://D:\belove-dad579bc04216a9aaf335168447c3950dccd547c\belove-dad579bc04216a9aaf335168447c3950dccd547c\libraries\swipe\swipe.iml" filepath="D:\belove-dad579bc04216a9aaf335168447c3950dccd547c\belove-dad579bc04216a9aaf335168447c3950dccd547c\libraries\swipe\swipe.iml" />
     </modules>
   </component>
 </project>

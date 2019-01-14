@@ -46,6 +46,10 @@ dependencies {
     implementation 'com.nineoldandroids:library:2.4.0'
     //RecyclerView Animation
     implementation 'com.mlsdev.animatedrv:library:1.0.1'
+    //SpinKit
+    implementation 'com.github.ybq:Android-SpinKit:1.2.0'
+    //DropdownTextView
+    implementation 'com.github.hakobast:dropdown-textview:0.1.1'
     implementation project(':libraries:pageindicator')
     implementation project(':libraries:swipe')
     implementation project(':libraries:photo')

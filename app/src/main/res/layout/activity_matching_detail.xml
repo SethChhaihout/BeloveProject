@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.planbcambodia.beloveproject.activity.MatchingDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+        <ImageView
+            android:id="@+id/btn_close_in_matching_detail"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_close"
+            />
+
+        <ImageView
+            android:id="@+id/btn_block_in_matching_detail"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_block" />
+        <TextView
+            android:id="@+id/txtName_in_matching_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kiri ,30"
+            android:layout_below="@id/btn_close_in_matching_detail"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"/>
+        <ImageView
+            android:id="@+id/ic_locat_in_matching_detail"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/ic_location"
+            android:layout_below="@id/txtName_in_matching_detail"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/txtLocation_in_matching_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="phnom penh"
+            android:layout_below="@id/txtName_in_matching_detail"
+            android:layout_toRightOf="@id/ic_locat_in_matching_detail"
+            android:layout_marginLeft="5dp"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_in_matching_detail"
+        android:layout_below="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"/>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/gradient">
+
+        <ImageView
+            android:id="@+id/btn_arrow_down"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_arrow_down" />
+
+        <ImageView
+            android:id="@+id/btn_sorry_matching_detail"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="75dp"
+            android:src="@drawable/ic_sorry" />
+
+        <ImageView
+            android:id="@+id/btn_chat_matching_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_chat_in_detail" />
+
+        <ImageView
+            android:id="@+id/btn_love_matching_detail"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="70dp"
+            android:src="@drawable/ic_love" />
+    </RelativeLayout>
+</RelativeLayout>
